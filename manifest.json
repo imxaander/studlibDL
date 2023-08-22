@@ -1,0 +1,9 @@
+{
+    "manifest_version": 1,
+    "name": "studlibDL",
+    "description": "studylib downloader",
+    "version": "1.0",
+    "action": {
+      "default_popup": "main.html"
+    }
+  }
