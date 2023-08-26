@@ -1,9 +1,25 @@
 {
-    "manifest_version": 3,
-    "name": "studlibDL",
-    "description": "studylib downloader",
-    "version": "1.0",
-    "action": {
-      "default_popup": "main.html"
+  "manifest_version": 3,
+  "name": "studlibDL",
+  "description": "studylib downloader",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "icons":{
+    "16": "images/icon.png"
+  },
+  "action": {
+    "default_popup" : "main.html",
+    "default_icon": "images/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
     }
   }
+}
